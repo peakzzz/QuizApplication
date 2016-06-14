@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Question04</title>
+		<!--Include JS file here-->
+        <script src = "LoginValidation.js">
+        </script>
+<style>
+.left {
+    float: left;
+    width: 300px;
+}
+</style>
+</head>
+
+<body>
+		<div class="container">
+        <div id ="div4" 
+			<h1>Question 4</h1>
+            <h2> Watch the video and answer he following question.<br> What is the source as mentioned in the video?</h2>   
+                <div class="left">
+                	<input type="radio" id="r1" name="option" value="option1" checked> NASA.Gov
+                <br><br>
+                    <input type="radio" id="r2" name="option" value="option2"> Facebook
+                     <br><br><br>
+                    <input type="button" value="Submit & Next Question" id="submitandnext" onclick="goToSurvey()">
+                </div>
+                <div class="left">
+                    <input type="radio" id="r3" name="option" value="option3"> Data.gov
+                 	<br><br>
+                    <input type="radio" id="r4" name="option" value="option4"> BBC.net
+                    <br><br><br>
+                    <input type="button" value="Cancel & Clear Selection" id="cancelandclear" onclick="goToSameQuestion()">
+                 </div>
+                 <div class="right">
+                 <iframe width="400" height="320" src="https://www.youtube.com/embed/ZSt9tm3RoUU" frameborder="0" allowfullscreen></iframe>
+                 </div>
+       	</div>
+        </div>
+</body>
+</html>
+

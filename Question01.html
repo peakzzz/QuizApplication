@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+		<!--Include JS file here-->
+        <script src = "LoginValidation.js">
+        </script>
+<style>
+.left {
+    float: left;
+    width: 300px;
+}
+.right {
+    float: right;
+    width: 1200px;
+}
+.center {
+    float: center;
+    width: 300px;
+}
+</style>
+</head>
+
+<body>
+		<div class="container">
+        <div id ="div1" 
+			<h1>Question 1</h1>
+            <h2> Given points (x1,y1) and (x2,y2) select the formula to find the equation of the given line. </h2>         
+                <div class="left">
+                    <input type="radio" id="r1" name="option" value="option1" checked> y=mx+b
+                	<br><br>
+                    <input type="radio" id="r2" name="option" value="option2"> y-y1 = m(x-x1)
+                     <br><br><br>
+                    <input type="button" value="Submit & Next Question" id="submitandnext" onclick="goToQuestion02()">
+                </div>
+                <div class="left">
+                    <input type="radio" id="r3" name="option" value="option3"> (x-h)<sup>2</sup> + (y-k)<sup>2</sup> = r<sup>2</sup>
+                 	<br><br>
+                    <input type="radio" id="r4" name="option" value="option4"> (y-y2) = ((y2-y1) &divide; (x2-x1)) (x-x2)
+                    <br><br><br>
+                    <input type="button" value="Cancel & Clear Selection" id="cancelandclear" onclick="goToSameQuestion()">
+                 </div>
+                 <div class="right">
+                 	<img src="Graph.JPG" alt="Linear Graph" width="340" height="267">
+                 </div>  	
+        </div>
+		</div>
+</body>
+</html>
+

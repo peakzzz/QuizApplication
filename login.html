@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Login Form </title>
+		<!--Include JS file here-->
+        <script src = "LoginValidation.js">
+        </script>
+     
+	</head>
+	<body>
+		<div class="container">
+        <div class="main">
+			<h2> User Login </h2>  
+            <form id="form_id" method="post" name="myform">   
+				<label>Username : </label>
+				<input type="text" name="username" placeholder="Username" required="" id="username">
+                <br><br>
+       			<label>Password : </label>
+				<input type="password" name="password" placeholder="Password" required="" id="password">
+               	<br><br>
+    			<input type="button" value="Login" id="submit" onclick="validate()">
+               	<a href="#"> Create Account/Forgot? </a>
+       	    </form>
+            <br>
+            <span><b class="note">Note : </b>For this quiz application use following username and password. <br/><b class="valid">User Name : username<br/>Password : password</b></span>
+    	</div>
+		</div>
+	</body>
+</html>

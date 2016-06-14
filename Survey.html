@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Survey</title>
+<!--Include JS file here-->
+        <script src = "LoginValidation.js">
+        </script>
+<style>
+.left {
+    float: left;
+    width: 300px;
+}
+.right {
+    float: right;
+    width: 300px;
+}
+.center {
+    float: center;
+    width: 300px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+        <div id ="div5" 
+			<h1>Survey</h1>
+            <h2> How did you like the center?</h2> 
+            <p> Comments: </p>        
+               <div id="surveytext">
+       				<textarea id="survey" name="surveytext" rows="5" cols="40"></textarea><br/><br/>
+                     Select Text Area Location : <br/>
+                </div>
+                <div class="left">
+                     <h4> City: </h4>
+                         <select>
+  								 <option value="sj">San Jose</option>
+ 								 <option value="sf">San Francisco</option>
+ 								 <option value="mtn">Mountain View</option>
+ 								 <option value="pa">Palo Alto</option>
+                                 <option value="sv">Sunnyvale</option>
+                                 <option value="sm">San Mateo</option>
+						 </select>
+                         <br><br>
+                			<input type="button" value="Submit & Next Question" id="submitandnext" onclick="goToScoreCard()">
+                 </div>
+                 <div class="left">
+                  	 <h4> Room number: </h4>
+                         <select>
+  								 <option value="room1">Room 337</option>
+ 								 <option value="room2">Room 210</option>
+ 								 <option value="room3">Room 110</option>
+ 								 <option value="room4">Room 410</option>
+                                 <option value="room5">Room 437</option>
+                                 <option value="room6">Room 117</option>
+						 </select>
+                         <br><br>
+                         <input type="button" value="Skip & Get Score" id="skipandnext" onclick="skipToNext()">
+                  </div>
+        </div>
+</div>
+</body>
+</html>

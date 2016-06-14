@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Question02</title>
+		<!--Include JS file here-->
+        <script src = "LoginValidation.js">
+        </script>
+<style>
+.left {
+    float: left;
+    width: 300px;
+}
+</style>
+</head>
+
+<body>
+		<div class="container">
+        <div id ="div2" 
+			<h1>Question 2</h1>
+            <h2> Select the cosine theorem formula. </h2>   
+                <div class="left">
+                	<input type="radio" id="r1" name="option" value="option1" checked> cos(&#945; &plusmn; &szlig;) = cos(&#945;) cos(&szlig;) &mnplus; sin(&#945;) sin(&szlig;)
+                <br><br>
+                    <input type="radio" id="r2" name="option" value="option2"> sin(&#945;)  &plus; sin(&szlig;) = 2sin(&#945; &plus; &szlig; &divide; 2) cos(&#945; &minus; &szlig; &divide; 2)
+                     <br><br><br>
+                    <input type="button" value="Submit & Next Question" id="submitandnext" onclick="goToQuestion03()">
+                </div>
+                <div class="left">
+                    <input type="radio" id="r3" name="option" value="option3"> sin(&#945; &plusmn; &szlig;) = sin(&#945;) cos(&szlig;) &plusmn; cos(&#945;) sin(&szlig;)
+                 	<br><br>
+                    <input type="radio" id="r4" name="option" value="option4"> sin(&#945;)  &minus; sin(&szlig;) = 2cos(&#945; &plus; &szlig; &divide; 2) sin(&#945; &minus; &szlig; &divide; 2)
+                    <br><br><br>
+                    <input type="button" value="Cancel & Clear Selection" id="cancelandclear" onclick="goToSameQuestion()">
+                 </div>
+       	</div>
+        </div>
+</body>
+</html>
+
